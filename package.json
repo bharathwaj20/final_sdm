@@ -24,12 +24,12 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "node watch.js",
-    
+    "build": "react-scripts build && node build.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "client": "npm start",
     "watch": "concurrently --kill-others-on-fail \"pm2 start development.json\" \"npm run dev\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm install pm2 && npm install terser@3.14.1 && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd server && npm install && npm install -d && npm install pm2 -g && npm install terser@3.14.1 && cd .. && pm2 start production.json"
     
   },
   "devDependencies": {
