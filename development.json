@@ -9,7 +9,7 @@
 		},
 		"env": {
 	        "NODE_ENV": "development",
-	        "HOST": "serler007.herokuapp.com"
+	        "HOST": "serler007.herokuapps.com"
 	    }
 		
 	}]
