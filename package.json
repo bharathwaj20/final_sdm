@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "node watch.js",
-    "build": "npm run watch",
+    "build": "react-scripts build && node build.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "client": "npm start",
