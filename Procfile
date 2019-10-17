@@ -1,1 +1,1 @@
-web: node build.js
+web: react-scripts build && node build.js
