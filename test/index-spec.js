@@ -6,3 +6,4 @@ describe('test', () => {
     expect('ci with travis').to.equal('ci with travis');
   });
 });
+process.exit(0);
