@@ -1,1 +1,1 @@
-web: react-scripts build && node build.js
+web: npm run watch
