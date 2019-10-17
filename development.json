@@ -6,7 +6,11 @@
 		"watch_options": {
 		    "followSymlinks": false,
 		    "usePolling": true
-		}
+		},
+		"env": {
+	        "NODE_ENV": "development",
+	        "HOST": "serler007.herokuapp.com"
+	    }
 		
 	}]
 }
