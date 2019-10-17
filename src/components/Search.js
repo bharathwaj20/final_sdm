@@ -86,11 +86,11 @@ export default class Search extends Component {
         			title: article.title,
         			year: article.year,
         			author: article.author,
-					volume: article.volume,
-					month: article.month,
+        			month: article.month,
         			number: article.number,
-					seMethod: article.seMethod,
-					url: article.url,
+        			volume: article.volume,
+        			url: article.url,
+        			seMethod: article.seMethod,
         			seMethodology: article.seMethodology,
         			researchQuestion: article.researchQuestion,
         			researchResult: article.researchResult
@@ -178,10 +178,6 @@ export default class Search extends Component {
 																			<option value="keywords">Keywords</option>
 																			<option value="title">Document Title</option>
 																			<option value="author">Authors</option>
-																			<option value="seMethod">SE Method</option>
-																			<option value="seMethodology">Methodlogy</option>
-																			<option value="researchQuestion">Research Question</option>
-																			<option value="researchResult">Research Result</option>
 																		</Field>
 																		<ErrorMessage name={`category`}>
 																			{msg => <div className="errors">{msg}</div>}
@@ -236,10 +232,6 @@ export default class Search extends Component {
 																				<option value="keywords">Keywords</option>
 																				<option value="title">Document Title</option>
 																				<option value="author">Authors</option>
-																				<option value="seMethod">SE Method</option>
-																				<option value="seMethodology">Methodlogy</option>
-																				<option value="researchQuestion">Research Question</option>
-																				<option value="researchResult">Research Result</option>
 																			</Field>
 																			<ErrorMessage name={`composites[${index}].category`}>
 																				{msg => <div className="errors">{msg}</div>}

@@ -10,11 +10,7 @@ const apiRoutes = require('./routes/api');
 const mongoose = require('mongoose');
 const config = require('./DB.js');
 
-// require('dotenv').config({path : path.join(__dirname, '.env')});
-// require('dotenv').config({path : path.join(__dirname, '.env.url-only')});
-
 var app = express();
-
 
 var distDir = '../dist';
 

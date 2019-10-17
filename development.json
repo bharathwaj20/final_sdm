@@ -8,9 +8,7 @@
 		    "usePolling": true
 		},
 		"env": {
-	        "NODE_ENV": "development",
-	        "PORT":4009
+	        "NODE_ENV": "development"
 	    }
-		
 	}]
 }

@@ -1,5 +1,4 @@
-# MERN
-A MERN stack starter project - M(Mysql or Mongo), E(Express), R(React), N(Node)
+# Book
 
 ## Installations
 

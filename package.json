@@ -10,7 +10,6 @@
     "formik": "^1.5.8",
     "fs-extra": "^7.0.1",
     "mdbreact": "^4.21.0",
-    "mocha": "^6.2.1",
     "react": "^16.3.2",
     "react-ckeditor-component": "^1.0.7",
     "react-dom": "^16.3.2",
@@ -20,28 +19,31 @@
     "react-toggle": "^4.0.2",
     "reactstrap": "^6.1.0",
     "reselect": "^3.0.1",
-    "yup": "^0.27.0"
+    "yup": "^0.27.0",
+    "enzyme": "^2.9.1",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "babel-jest": "^21.2.0"
+  },
+  "engines": {
+    "node": "10.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/bin/www",
     "dev": "node watch.js",
     "build": "react-scripts build && node build.js",
-    "test": "mocha",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "client": "npm start",
     "watch": "concurrently --kill-others-on-fail \"pm2 start development.json\" \"npm run dev\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd server && npm install && npm install -d && npm install pm2 -g && npm install terser@3.14.1 && cd .. && pm2 start production.json"
+    "heroku-postbuild": "cd server && npm install && npm install -d && cd .."
   },
   "devDependencies": {
-    "concurrently": "^3.5.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "terser": "^3.14.1"
+    "concurrently": "^3.5.0"
   },
-  "engines": {
-    "node": "12.12.0",
-    "npm": "6.11.3"
-  },
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
