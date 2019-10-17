@@ -30,7 +30,6 @@
     "client": "npm start",
     "watch": "concurrently --kill-others-on-fail \"pm2 start development.json\" \"npm run dev\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd server && npm install && npm install -d && npm install pm2 -g && npm install terser@3.14.1 && cd .. && pm2 start production.json"
-    
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
@@ -38,11 +37,10 @@
     "redux": "^4.0.0",
     "terser": "^3.14.1"
   },
-  "engines":{
+  "engines": {
     "node": "12.12.0",
     "npm": "6.11.3"
   },
-  
   "browserslist": {
     "production": [
       ">0.2%",

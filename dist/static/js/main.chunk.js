@@ -1760,7 +1760,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 
-const LoginService = data => axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('http://localhost:3009/registration/login', data).then(res => res.status);
+const LoginService = data => axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/registration/login', data).then(res => res.status);
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginService);
 
@@ -1788,9 +1788,9 @@ const UserRegistration = data => {
   const salt = bcryptjs__WEBPACK_IMPORTED_MODULE_1___default.a.genSaltSync(10);
   const hash = bcryptjs__WEBPACK_IMPORTED_MODULE_1___default.a.hashSync(password, salt);
   data["password"] = hash;
-  return axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('http://localhost:3009/registration/register', data).then(res => res.status);
+  return axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/registration/register', data).then(res => res.status);
 };
-const UsernameValidation = data => axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('http://localhost:3009/registration/validateUsername', data).then(exist => exist.status);
+const UsernameValidation = data => axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/registration/validateUsername', data).then(exist => exist.status);
 
 /***/ }),
 

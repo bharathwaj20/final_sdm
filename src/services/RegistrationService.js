@@ -8,11 +8,11 @@ export const UserRegistration = data => {
 
 	data["password"] = hash;
 
-	return axios.post('http://localhost:3009/registration/register', data)
+	return axios.post('/registration/register', data)
 		.then(res => res.status)
 }
 
 export const UsernameValidation = data => (
-	axios.post('http://localhost:3009/registration/validateUsername', data)
+	axios.post('/registration/validateUsername', data)
 		.then(exist => exist.status)
 )
