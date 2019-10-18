@@ -34,4 +34,4 @@ Enjoy!
 
 ## Developer
 
-Developed by S. Vijay
+Developed by Group 10
