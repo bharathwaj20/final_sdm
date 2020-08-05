@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "express-fileupload": "^0.4.0",
+    "express-fileupload": "^1.1.9",
     "mongoose": "^5.4.8",
     "website-scraper": "^3.3.5",
     "body-parser": "^1.18.3",
